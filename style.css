@@ -1,7 +1,12 @@
 @font-face {
     font-family: CMU;
-    src: url("/assets/font/cmunsi.ttf") format("truetype");
+    src: url("/assets/font/cmunso.ttf") format("truetype");
 }  
+
+@font-face {
+    font-family: CMU;
+    src: url("/assets/font/cmunsi.ttf") format("truetype");
+} 
 
 html {
     height: 100%;
@@ -35,9 +40,10 @@ body {
     justify-self: right;
     font-size: 6em;
     padding-right: 2em;
-    padding-top: .5em;
+    padding-top: 2em;
     box-sizing: border-box;
     display: block;
+    text-transform: capitalize;
 }
 
 .welcome .contact {
