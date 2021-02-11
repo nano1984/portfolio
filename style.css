@@ -1,3 +1,8 @@
+@font-face {
+    font-family: CMU;
+    src: url("/assets/font/cmunsi.ttf") format("truetype");
+}  
+
 html {
     height: 100%;
 }
@@ -7,11 +12,12 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 100%;  
+    font-family: CMU;
 }
 
 .welcome {
-    display: inline-block;
+    display: grid;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -20,12 +26,28 @@ body {
     background-image: url('/assets/images/welcome.background.png');
     background-size: contain;
     background-repeat: no-repeat;
+    grid-template-columns: auto auto;
 }
 
 .welcome .title {
-
+    grid-column: 2 / 3;
+    grid-row: 1;
+    justify-self: right;
+    font-size: 6em;
+    padding-right: 2em;
+    padding-top: .5em;
+    box-sizing: border-box;
+    display: block;
 }
 
 .welcome .contact {
-
+    display: block;
+    width: 50%;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    justify-self: right;
+    align-self: top;
+    padding-right: 2em;
+    padding-bottom: .5em;
+    box-sizing: border-box;
 }
